@@ -120,6 +120,20 @@ const contributions = [
     commits: 4,
     merged: 'Aug 2026',
   },
+  {
+    repo: 'elastic/eui',
+    lang: 'TypeScript / React',
+    status: 'approved',
+    title: '[EuiDataGridColumnResizer] Migrate from class to function component',
+    description: 'A second EUI migration, this one with a wrinkle: the data grid\'s column-resize handle attaches its drag listeners to the browser window on mouse down, and the very same functions have to be there to unhook them on release. I moved it to hooks while preserving that, added cleanup on unmount, and rewrote the tests to drive real mouse events rather than calling the component\'s methods directly.',
+    pr: 'https://github.com/elastic/eui/pull/9971',
+    prNumber: '#9971',
+    additions: 185,
+    deletions: 161,
+    files: 4,
+    commits: 3,
+    merged: 'Sep 2026',
+  },
 ]
 
 function MergeIcon() {
