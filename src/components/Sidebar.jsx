@@ -55,7 +55,7 @@ export default function Sidebar({ activeSection }) {
             className={styles.resumeBtn}
           >
             <span className={styles.resumeLabel}>Resume / CV</span>
-            <span className={styles.resumeMeta}>UPDATED AUGUST 2026</span>
+            <span className={styles.resumeMeta}>UPDATED SEPTEMBER 2026</span>
           </a>
 
           <a href="#contact" className={styles.contactBtn} onClick={() => setOpen(false)}>
