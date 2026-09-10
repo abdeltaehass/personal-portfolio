@@ -56,7 +56,6 @@ const contributions = [
   {
     repo: 'NVIDIA/cccl',
     lang: 'CUDA C++',
-    status: 'approved',
     title: 'Error early when the CUDA backend is used without a CUDA compiler',
     description: 'Including a Thrust header without a CUDA compiler produced roughly 1,300 unrelated errors, none of which named the actual cause. I added a check that reports the real problem in one line and names the ways out, placed so it fires before the downstream noise begins. Review narrowed it further, so a host-only build still compiles as long as the CUDA toolkit headers are present.',
     pr: 'https://github.com/NVIDIA/cccl/pull/11059',
