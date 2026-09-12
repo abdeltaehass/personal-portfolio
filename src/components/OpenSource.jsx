@@ -32,7 +32,6 @@ const contributions = [
   {
     repo: 'google/gvisor',
     lang: 'Go / C++',
-    status: 'approved',
     title: 'Return ETXTBSY when writing to a binary that is being executed',
     description: 'Overwriting a program\'s file while that program was still running quietly corrupted the running image and usually killed it with a bus error. Real Linux refuses the write outright; gVisor tracked nothing of the kind. I added a count of the processes currently executing a file, held for exactly as long as the kernel holds its own, and taught the three filesystems that can host executables to reject writes and truncations before the file is touched. Verified against native Linux and five gVisor configurations, including checkpoint/restore.',
     pr: 'https://github.com/google/gvisor/pull/14395',
