@@ -5,6 +5,14 @@ import styles from './Projects.module.css'
 
 const projects = [
   {
+    name: 'pilotfish — Packet Analyzer from Scratch',
+    badge: 'In Progress',
+    description: 'Wireshark-style packet analyzer for macOS written from scratch in Python, with no packet libraries: live capture runs through a hand-written ctypes binding to libpcap (or straight from /dev/bpf), and every file reader and protocol decoder is standard-library code. Capture filters compile to BPF and run in the kernel, with a custom BPF interpreter applying the same filters to saved pcap/pcapng files. Decodes 442 fields under Wireshark\'s own field names across Ethernet, IPv4/IPv6, ICMP, TCP/UDP, DNS, DHCP, HTTP, TLS (JA3/JA3S fingerprints), and SSH (HASSH), including Wireshark\'s TCP retransmission, out-of-order, and duplicate-ACK analysis. Verified field by field against tshark output on ~47,000 values, and fuzzed with Hypothesis so a malformed packet is flagged instead of crashing the decoder. Building next: stream reassembly, then a PySide6 desktop GUI.',
+    tags: ['Python', 'libpcap', 'ctypes', 'BPF', 'TCP/IP', 'Hypothesis'],
+    github: 'https://github.com/abdeltaehass/WireShark_Replica',
+    live: null,
+  },
+  {
     name: 'APEX — Arrhythmia Pattern Explainer',
     description: 'End-to-end ECG decision-support system classifying 71 diagnostic categories, hitting 0.920 macro-AUROC on PTB-XL\'s held-out test split — matching published benchmarks with a compact 1D CNN, served via FastAPI at 6 ms inference. Engineered a reliability layer that flags the model\'s own untrustworthy output: per-lead Grad-CAM grounding plus four consistency and confidence checks, documented in a Hugging Face model card with a measured sex-performance disparity (0.925 vs 0.906 AUROC). Reduced Expected Calibration Error from 0.079 to 0.002 (97%) via per-label vector scaling with AUROC unchanged, cutting spurious findings 93% (5.09 → 0.35 per record).',
     tags: ['Python', 'PyTorch', 'FastAPI', '1D CNN', 'Grad-CAM', 'Hugging Face'],
