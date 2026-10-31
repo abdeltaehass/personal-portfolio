@@ -3,6 +3,21 @@ import styles from './Experience.module.css'
 
 const jobs = [
   {
+    role: 'Storage Architect',
+    company: 'CDT',
+    period: 'Oct 2026 — Present',
+    points: [
+      'Support the architecture, operation, and reliability of enterprise zSystems storage infrastructure serving mission-critical California state applications.',
+      'Plan, install, test, monitor, tune, and maintain storage hardware and software across z/OS environments.',
+      'Support DASD, virtual tape, cloud storage, and SAN technologies with an emphasis on availability, performance, capacity, and operational resilience.',
+      'Troubleshoot complex infrastructure incidents, perform root-cause analysis, and recommend long-term platform improvements.',
+      'Contribute to storage architecture, technical standards, capacity planning, system upgrades, and disaster-recovery readiness.',
+      'Collaborate with infrastructure teams, technical leadership, vendors, and state customers to translate operational requirements into reliable storage solutions.',
+      'Produce technical documentation and communicate system risks, recommendations, and implementation plans to technical and nontechnical stakeholders.',
+    ],
+    tags: ['z/OS', 'zSystems', 'DASD', 'Virtual Tape', 'SAN', 'Cloud Storage', 'Storage Architecture', 'Capacity Planning', 'Disaster Recovery', 'Root-Cause Analysis'],
+  },
+  {
     role: 'AI Research Engineer',
     company: 'Medical AI Research',
     period: 'Aug 2025 — Present',
@@ -14,7 +29,7 @@ const jobs = [
   {
     role: 'Software Engineer',
     company: 'DHCS',
-    period: 'May 2025 — Present',
+    period: 'May 2025 — Sep 2026',
     points: [
       'Streamlined production monitoring, log processing, and reporting workflows — reduced manual operational work 40% and cut mean time to detection 50%.',
       'Reworked backend integration, validation, and alerting workflows, accelerating root-cause analysis 35% and reducing incident resolution time 30%.',
@@ -84,6 +99,11 @@ export default function Experience({ embedded = false }) {
                 <li key={idx}>{p}</li>
               ))}
             </ul>
+            {j.tags && (
+              <div className={styles.tags}>
+                {j.tags.map(t => <span key={t} className={styles.tag}>{t}</span>)}
+              </div>
+            )}
           </div>
         </li>
       ))}

@@ -1,6 +1,6 @@
 # Abdelrahman Taeha
 
-> Software Engineer at DHCS (California Dept. of Health Care Services) and AI Research Engineer. Co-author of SpineFairBench (counterfactual evaluation suite for spinal-radiology VLM auditing) and contributor to MedInsider (medical LLM agent integrity evaluation suite). Pursuing an M.S. in Computer Science (Machine Learning) at Georgia Tech.
+> Storage Architect at the California Department of Technology (CDT), supporting California's enterprise z/OS storage environment, and AI Research Engineer. Co-author of SpineFairBench (counterfactual evaluation suite for spinal-radiology VLM auditing) and contributor to MedInsider (medical LLM agent integrity evaluation suite). Pursuing an M.S. in Computer Science (Machine Learning) at Georgia Tech.
 
 Portfolio: https://abdelrahmantaeha.com/
 
@@ -20,8 +20,9 @@ Portfolio: https://abdelrahmantaeha.com/
 
 ## Experience
 
+- **Storage Architect — California Department of Technology** (Oct 2026 – Present · zSystems Infrastructure Services, Rancho Cordova, CA): Abdelrahman Taeha works as a Storage Architect with the California Department of Technology in Rancho Cordova, supporting the architecture, operation, and reliability of enterprise zSystems storage infrastructure serving mission-critical California state applications. He plans, installs, tests, monitors, tunes, and maintains storage hardware and software across z/OS environments, covering DASD, virtual tape, cloud storage, and SAN technologies. His work includes incident troubleshooting and root-cause analysis, storage architecture and technical standards, capacity planning, system upgrades, disaster-recovery readiness, and documenting risks and implementation plans for technical leadership, vendors, and state customers.
 - **AI Research Engineer — Medical AI Research** (Aug 2025 – Present):Co-authored SpineFairBench,evaluated 9 medical VLMs across 7,996 paired spinal radiographs, and architected evaluation/logging infrastructure for medical LLM agent integrity work.
-- **Software Engineer — DHCS** (May 2025 – Present): Automated monitoring/reporting pipelines, reduced observability overhead 40%, cut MTTD for production incidents in half, accelerated root-cause analysis 35%.
+- **Software Engineer — DHCS** (May 2025 – Sep 2026): Automated monitoring/reporting pipelines, reduced observability overhead 40%, cut MTTD for production incidents in half, accelerated root-cause analysis 35%.
 - **Software Engineering Intern — District Hut** (May 2024 – Jul 2025): Scaled distributed data pipelines processing 3 TB/week on AWS; 75% automation of data validation with 100% test coverage; reduced manual model-retraining effort by 6 hours/week.
 
 ## Selected Projects
