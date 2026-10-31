@@ -4,7 +4,7 @@ import styles from './Experience.module.css'
 const jobs = [
   {
     role: 'Storage Architect',
-    company: 'CDT',
+    company: 'California Department of Technology',
     period: 'Oct 2026 — Present',
     points: [
       'Support the architecture, operation, and reliability of enterprise zSystems storage infrastructure serving mission-critical California state applications.',
@@ -28,7 +28,7 @@ const jobs = [
   },
   {
     role: 'Software Engineer',
-    company: 'DHCS',
+    company: 'California Department of Health Care Services',
     period: 'May 2025 — Sep 2026',
     points: [
       'Streamlined production monitoring, log processing, and reporting workflows — reduced manual operational work 40% and cut mean time to detection 50%.',
